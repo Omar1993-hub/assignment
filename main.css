@@ -434,7 +434,7 @@ body {
     align-items: center;
     height: 480px;
     padding: 25px;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
   }
   .offer h1 {
     text-align: center;
@@ -784,7 +784,7 @@ td {
 }
 /* media query */
 @media (max-width: 768px) {
-  .text{
+  .text {
     font-size: 20px;
     text-align: center;
   }
