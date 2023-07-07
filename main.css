@@ -434,6 +434,7 @@ body {
     align-items: center;
     height: 480px;
     padding: 25px;
+    margin-bottom: 100px;
   }
   .offer h1 {
     text-align: center;
