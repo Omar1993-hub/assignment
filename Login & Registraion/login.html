@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="registration.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Login Page</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+          <div class="nav">
+            <a href="../index.html"
+              ><span><i class="fa-solid fa-wand-magic-sparkles"></i></span> Home
+              Page</a
+            >
+          </div>
+      </header>
+      <div class="overlay"></div>
+      <div class="card login">
+        <h1>Welcome Back</h1>
+        <form method="POST">
+          <label for="email">Email Address</label>
+          <br />
+          <input type="email" />
+          <br />
+          <label for="password">Password</label>
+          <br />
+          <input type="password" />
+        </form>
+        <p>Forget Your Password? <a href="#">Reset It</a></p>
+        <button class="sign-in">Sign In</button>
+        <br>
+        <p>New To Our Agency? <button onclick="toggleSections()" id="start">Get Started</button></p>
+      </div>
+      <div class="card register">
+        <h1>Get started with Omar Shafik Agency</h1>
+        <p>Hire and manage all your employees from one single platfrom</p>
+        <p>Already have an account? <button onclick="toggleSections()" id="sign">Sign In</button></p>
+        <form action="" method="POST">
+          <label for="FirstName">First Name</label>
+          <br />
+          <input type="text" required />
+          <br />
+          <label for="secondName">Second Name</label>
+          <br />
+          <input type="text" required />
+          <br />
+          <label for="email">Email</label>
+          <br />
+          <input type="email" name="email" id="email" required />
+          <br />
+          <label for="phone">Phone Number</label>
+          <br />
+          <input type="tel" name="phone" id="phone" required />
+          <br />
+          <label for="companyName">Company Name</label>
+          <br />
+          <input type="text" name="companyName" id="companyName" required />
+          <br />
+          <label for="password">Password</label>
+          <br />
+          <input type="password" name="password" id="password" required />
+          <br />
+          <label for="cpassword">Confirm Password</label>
+          <br />
+          <input type="password" name="cpassword" id="cpassword" required />
+          <br />
+          <button type="submit">Register</button>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script>
+    function toggleSections() {
+      const loginSection = document.querySelector(".login");
+      const registerSection = document.querySelector(".register");
+
+      // Toggle the display property of login and register sections
+      if (loginSection.style.display === "none") {
+        loginSection.style.display = "flex";
+        registerSection.style.display = "none";
+      } else {
+        loginSection.style.display = "none";
+        registerSection.style.display = "flex";
+      }
+    }
+    
+  </script>
+</html>

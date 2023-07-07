@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="title">
+      <header>
+        <div class="container">
+          <div class="nav">
+            <a href="../index.html"
+              ><span><i class="fa-solid fa-wand-magic-sparkles"></i></span> Home
+              Page</a
+            >
+          </div>
+        </div>
+      </header>
+      <div class="overlay"></div>
+      <div class="text">
+        <h1>This Is Searching functionality</h1>
+        <p>
+          in this section you can search for candidates by location and job role
+        </p>
+      </div>
+
+      <div class="search">
+        <input type="text" id="locationInput" placeholder=" Enter a Location" />
+        <input type="text" id="jobRoleInput" placeholder="Enter a Role" />
+        <button onclick="searchCandidates()">Search</button>
+      </div>
+
+      <ul id="candidateList" class="list"></ul>
+      <div id="candidateSection">
+        <!-- <hr> -->
+        <!-- <h2>Candidate List</h2>
+        <ul class="allcandidate" id="allCandidate"></ul> -->
+        <div class="evaluation">
+          <h1>Evaluation List</h1>
+          <div id="evaluationList" class="evaluationList"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

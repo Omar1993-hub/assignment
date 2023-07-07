@@ -1,0 +1,160 @@
+html,
+body {
+  /* height: 100%; */
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: white;
+  scroll-behavior: smooth;
+}
+header {
+  border-bottom: 2px solid black;
+}
+.container {
+  width: 100%;
+  margin: auto;
+  background-image: url("../images/background.png");
+  background-size: cover;
+  background-position: top left;
+  min-height: 100vh;
+}
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin: 10px; */
+}
+.nav a {
+  text-decoration: none;
+  color: #9f7933;
+  font-size: 35px;
+  font-weight: 500;
+  margin: 10px;
+  font-weight: bold;
+}
+.nav a span {
+  font-size: 25px;
+}
+.nav a:hover {
+  transition: 0.3s ease-in-out;
+  color: #9a8765;
+}
+/* Main Content */
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* margin: 100px auto; */
+  min-height: 100%;
+animation: card 1s ease-in-out 0s 1 normal forwards;
+}
+@keyframes card {
+	0% {
+		transform: scale3d(1, 1, 1);
+	}
+
+	30% {
+		transform: scale3d(1.25, 0.75, 1);
+	}
+
+	40% {
+		transform: scale3d(0.75, 1.25, 1);
+	}
+
+	50% {
+		transform: scale3d(1.15, 0.85, 1);
+	}
+
+	65% {
+		transform: scale3d(0.95, 1.05, 1);
+	}
+
+	75% {
+		transform: scale3d(1.05, 0.95, 1);
+	}
+
+	100% {
+		transform: scale3d(1, 1, 1);
+	}
+}
+.card form {
+  margin-top: 20px;
+  /* padding: 25px; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.card form label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #6a7279;
+}
+.card form input {
+  width: 350px;
+  height: 40px;
+  border-radius: 5px;
+}
+.card form input:focus {
+  outline: none;
+  border: 2px solid #9f7933;
+}
+
+.card h1 {
+  font-size: 40px;
+  font-weight: 600;
+  /* margin: 10px; */
+  color: #9f7933;
+}
+.card p {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 10px;
+}
+.card a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 10px;
+}
+.card a:hover {
+  transition: 0.3s ease-in-out;
+  color: #887044;
+}
+button#sign {
+  width: 150px;
+  background-color: #9f7933;
+}
+button#start{
+    width: 150px;
+    background-color: #9f7933;
+}
+.card button {
+  width: 357px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: #9f7933;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+.card button:hover {
+  transition: 0.3s ease-in-out;
+  background-color: #887044;
+  color: white;
+}
+
+.name {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.name label {
+  width: 100px;
+}
+.register {
+  display: none;
+}
